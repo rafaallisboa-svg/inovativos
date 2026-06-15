@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 76 76">
+  <!-- Generator: Adobe Illustrator 30.5.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #eff4f9;
+      }
+
+      .st1 {
+        fill: #cee4f2;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="st1" x="60.8" y="30.4" width="15.2" height="15.2"/>
+    <g>
+      <rect class="st1" x="15.2" y="15.2" width="15.2" height="15.2"/>
+      <rect class="st1" x="45.6" y="15.2" width="15.2" height="15.2"/>
+      <rect class="st1" y="30.4" width="15.2" height="15.2"/>
+      <rect class="st1" x="15.2" y="45.6" width="15.2" height="15.2"/>
+      <rect class="st1" x="45.6" y="45.6" width="15.2" height="15.2"/>
+    </g>
+  </g>
+  <g>
+    <path class="st0" d="M15.2,0c-4.2,0-8,1.7-10.8,4.4C1.7,7.2,0,11,0,15.2v15.2h15.2v15.2H0v15.2c0,4.2,1.7,8,4.4,10.8,2.8,2.7,6.6,4.4,10.8,4.4v-30.4h15.2v-15.2h-15.2V0Z"/>
+    <path class="st0" d="M60.8,0v30.4h15.2v-15.2c0-8.4-6.8-15.2-15.2-15.2Z"/>
+    <rect class="st0" x="45.6" y="30.4" width="15.2" height="15.2"/>
+    <path class="st0" d="M60.8,76c4.2,0,8-1.7,10.7-4.4,2.8-2.8,4.4-6.6,4.4-10.8v-15.2h-15.2v30.4Z"/>
+  </g>
+</svg>
