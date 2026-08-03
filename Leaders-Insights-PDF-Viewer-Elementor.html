@@ -1,0 +1,111 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+<style>
+.pdfli *{box-sizing:border-box;margin:0;padding:0;}
+.pdfli{
+  --dark:#1c373c;--dark2:#142a2e;--cyan:#45bccb;--off:#eff4f9;--gold:#f2bc74;--purple:#4f3a86;
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  background:var(--dark);
+  padding:48px 72px;
+  position:relative;
+}
+
+.pdfli::before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(30deg,rgba(69,188,203,0) 0 49%,rgba(69,188,203,.06) 49% 50.2%,rgba(69,188,203,0) 50.2%),
+    linear-gradient(-30deg,rgba(79,58,134,0) 0 49%,rgba(79,58,134,.04) 49% 50.2%,rgba(79,58,134,0) 50.2%);
+  background-size:88px 88px,88px 88px;
+}
+
+.pdfli-panel{
+  position:relative;z-index:1;
+  max-width:1032px;
+  margin:0 auto;
+  border:1px solid rgba(69,188,203,.28);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:
+    0 0 0 1px rgba(69,188,203,.06),
+    0 24px 64px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(239,244,249,.06);
+}
+
+.pdfli-head{
+  padding:36px 40px 28px 48px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+  border-bottom:1px solid rgba(239,244,249,.08);
+  position:relative;
+}
+.pdfli-head::before{
+  content:"";position:absolute;left:0;top:20%;bottom:20%;
+  width:3px;border-radius:0 2px 2px 0;
+  background:var(--gold);
+}
+.pdfli-title{
+  font-size:26px;font-weight:700;letter-spacing:-.022em;
+  color:var(--off);line-height:1.1;margin-bottom:10px;
+}
+.pdfli-desc{
+  font-size:15px;line-height:1.6;
+  color:rgba(239,244,249,.90);
+  max-width:640px;text-wrap:pretty;
+}
+.pdfli-download{
+  display:flex;align-items:center;gap:10px;flex-shrink:0;
+  padding:14px 24px;border-radius:999px;
+  background:var(--gold);color:var(--dark2);
+  font-size:15px;font-weight:700;text-decoration:none;
+  box-shadow:0 6px 20px rgba(242,188,116,.28);
+  transition:transform .22s,box-shadow .22s;
+}
+.pdfli-download:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(242,188,116,.36);}
+
+.pdfli-viewer-wrap{
+  position:relative;z-index:1;
+  background:var(--dark2);
+}
+.pdfli-viewer{
+  display:block;
+  width:100%;
+  height:820px;
+  border:none;
+}
+
+@media(max-width:860px){
+  .pdfli{padding:32px 36px;}
+  .pdfli-head{padding:28px 32px 24px 40px;flex-direction:column;align-items:flex-start;}
+  .pdfli-title{font-size:22px;}
+  .pdfli-viewer{height:640px;}
+}
+@media(max-width:580px){
+  .pdfli{padding:20px 16px;}
+  .pdfli-head{padding:24px 20px 20px 28px;}
+  .pdfli-title{font-size:20px;}
+  .pdfli-desc{font-size:14px;}
+  .pdfli-download{padding:12px 20px;font-size:14px;width:100%;justify-content:center;}
+  .pdfli-viewer{height:520px;}
+}
+</style>
+
+<div class="pdfli">
+  <div class="pdfli-panel">
+
+    <div class="pdfli-head">
+      <div class="pdfli-body">
+        <div class="pdfli-title">Leaders Insights</div>
+        <div class="pdfli-desc">Estudo inédito do Clube Inovativos com lideranças sobre os principais desafios e tendências de inovação. Visualize o material completo abaixo ou baixe o PDF.</div>
+      </div>
+      <a class="pdfli-download" href="https://raw.githubusercontent.com/rafaallisboa-svg/inovativos/main/Leaders%20Insights_Estudo-inedito2407_c.pdf" download>
+        <span>Baixar PDF</span> <span>↓</span>
+      </a>
+    </div>
+
+    <div class="pdfli-viewer-wrap">
+      <iframe class="pdfli-viewer" src="https://cdn.jsdelivr.net/gh/rafaallisboa-svg/inovativos@main/Leaders%20Insights_Estudo-inedito2407_c.pdf" title="Leaders Insights - Estudo Inédito"></iframe>
+    </div>
+
+  </div>
+</div>
